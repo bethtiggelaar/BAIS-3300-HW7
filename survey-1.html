@@ -5,14 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page 1</title>
-    <link ref="stylesheet" href=".css/stysheet.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
 
 </head>
 <body>
     <h1>Survey 1</h1>
-    <p>
-        <a href="./survey-1.html" Take survey ></a>
-    </p>
+
+    <form>
+        <fieldset>
+            <legend> Contact Information</legend>
+            <div>
+                <label for="fname"> First Name:
+                    <input id="fname" type="text" autofocus>
+                </label>
+            </div>
+            <div>
+                <label for="lname"> Last Name:
+                    <input id="lname" type="text">
+                </label></div>
+            <div>
+                <label  for="phone"> Phone Number: </label>    
+                    <input type="text" id="phone" placeholder="(555)123-4567">
+            </div>
+            <div>
+                <label for="email"> School email address:
+                    <input id="email" type="text" required>
+                </label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend> Choose how you identify</legend>
+            <div>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female"> Female 
+                </label><br>
+                
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                </label><br>
+            
+                <label for="transman">
+                    <input type="radio" id="transman" name="gender" value="transman"> Trans Man 
+                </label><br>
+                
+                <label for="transwoman">
+                    <input type="radio" id="transwoman" name="gender" value="transwoman"> Trans Woman 
+                </label><br>
+                
+                <label for="genderqueer">
+                <input type="radio" id="genderqueer" name="gender" value="genderqueer"> Non-binary
+                </label><br>
+                <label for="gendernonconforming">
+                    <input type="radio" id="gendernonconforming" name="gender" value="gendernonconforming"> Gender Non-conforming
+                </label><br>
+                <label for="non-binary">
+                    <input type="radio" id="non-binary" name="gender" value="non-binary"> Non-binary
+                 </label><br>
+                <label for="multigender">
+                    <input type="radio" id="multigender" name="gender" value="multigender"> Multi-gender
+                </label><br>
+                <label for="declinetostate">
+                    <input type="radio" id="declinetostate" name="gender" value="declinetostate"> Decline to state
+                </label><br>
+            </div>
+        </fieldset>
+        
+        <div>
+            <fieldset>
+                <legend> How do you get to class</legend>
+                  <label for="walking">
+                    <input type="checkbox" id="walking" name="activities" value ="walking"> Walking
+                  </label><br> 
+              
+                  <label for="biking">
+                    <input type="checkbox" id="biking" name="activities" value="biking"> Biking
+                  </label><br>
+              
+                  <label for="driving">
+                    <input type="checkbox" id="driving" name="activities" value="driving"> Driving
+                  </label><br>
+                  <label for="other">
+                    <input type="checkbox" id="other" name="activities" value="other"> Other
+                  </label><br>
+              </fieldset> 
+        </div>
+        <div>
+            <fieldset>
+                <label for="cars">Favorite place to study in Iowa city</label>
+                <div>
+        
+                    <select name="autos" id="cars">
+                        <option value="Please select a response...">Please select a response...</option>
+                        <option value="tippie">Tippie</option>
+                        <option value="mainlibrary">Main Library</option>
+                        <option value="coffeeshop">Coffee shop (such as Java House)</option>
+                        <option value="lawlibrary">Law Library</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+           
+    </form>
     <p><button onclick="window.location.href='./survey-2.html';">
         Next page
       </button></p>

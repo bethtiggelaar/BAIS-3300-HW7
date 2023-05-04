@@ -5,14 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Page 2</title>
-    <link ref="stylesheet" href=".css/stysheet.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
 
 </head>
 <body>
     <h1>Survey 2</h1>
-    <p>
-        <a href="./survey-2.html" Take survey ></a>
-    </p>
+    <form>
+        <fieldset>
+            <legend> School Organization Particpation</legend>
+            <div>
+                 <label for="numberofclubs">How many school organization do you participate:</label>
+        
+                <select name="autos" id="numberofclubs">
+                        <option value="Please select a response...">Please select a response...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="more">More</option>
+                </select>
+            </div>
+            <div>
+                <label for="clubname1"> School Organization Name 1:
+                    <input id="clubname1" type="text">
+                </label>
+            </div>
+            <div>
+                <label for="clubname2"> School Organization Name 2:
+                    <input id="clubname2" type="text">
+                </label>
+            </div>
+             <div>
+                 <label for="clubname3"> School Organization Name 3:
+                    <input id="clubname3" type="text">
+                </label>
+            </div>
+            <div>
+                <label for="clubname4"> School Organization Name 4:
+                   <input id="clubname4" type="text">
+               </label>
+           </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend> What is your favorite school facilitated activity:</legend>
+            <div>
+                <label for="goingtoagame">
+                    <input type="radio" id="goingtoagame" name="schoolactivity" value="goingtoagame"> Going to a game 
+                </label><br>
+                
+                <label for="club">
+                    <input type="radio" id="club" name="schoolactivity" value="club"> Club
+                </label><br>
+            
+                <label for="listeningtoguestspeakers">
+                    <input type="radio" id="listeningtoguestspeakers" name="schoolactivity" value="listeningtoguestspeakers"> Listening to guest speakers 
+                </label><br>
+                
+                <label for="specialevents">
+                    <input type="radio" id="specialevents" name="schoolactivity" value="specialevents"> Special events (such as Homecoming)
+                </label><br>
+                
+                <label for="other1">
+                <input type="radio" id="other1" name="schoolactivity" value="other"> Other
+                </label><br>
+            </div>
+        </fieldset>
+        
+        <div>
+            <fieldset>
+                <legend> What do you commonly do outside of class: </legend>
+                  <label for="reading">
+                    <input type="checkbox" id="reading" name="activities" value ="reading"> Reading
+                  </label> <br>   
+              
+                  <label for="hangingoutwithfriends">
+                    <input type="checkbox" id="hangingoutwithfriends" name="activities" value="hangingoutwithfriends"> Hanging out with friends
+                  </label><br>
+              
+                  <label for="listeningtomusic">
+                    <input type="checkbox" id="listeningtomusic" name="activities" value="listeningtomusic"> Listening to music
+                  </label><br>
+                  <label for="watchtv">
+                    <input type="checkbox" id="watchtv" name="activities" value="watchtv"> Watching TV
+                  </label><br>
+                  <label for="work">
+                    <input type="checkbox" id="work" name="activities" value="work"> Working
+                  </label><br>
+                  <label for="other">
+                    <input type="checkbox" id="other" name="activities" value="other"> Other
+                  </label><br>
+              </fieldset> 
+        </div>
+           
+    </form>
     <p><button onclick="window.location.href='./thank-you.html';">
         Submit survey
       </button></p>
